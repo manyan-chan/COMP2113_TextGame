@@ -34,6 +34,7 @@ List of features / functions to be implemented
 Choose one event from a pool of possible triggerable events after player's choice.  
 E.g. 10% to get two items, 60% to get one item, 30% to get zero item.  
 In some events, items or equipment may be confiscated. 
+
 *(Requirement 1 & 5)
 
 ### Dynamic Inventory System
