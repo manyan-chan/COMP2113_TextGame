@@ -33,16 +33,15 @@ List of features / functions to be implemented
 ### Event Randomizer
 Choose one event from a pool of possible triggerable events after player's choice.  
 E.g. 10% to get two items, 60% to get one item, 30% to get zero item.  
+In some events, items or equipment may be confiscated. 
 *(Requirement 1 & 5)
 
-In some scenarios, items or equipment may be confiscated. 
-
 ### Dynamic Inventory System
-Record the input and output of player's items or equipment.  
+Record the change of player's items or equipment.  
 *(Requirement 2 & 5)
 
 ### Game state Loading System
-When the player leaves in the middle of the game, a .txt file will be created. 
+When the player leaves in the middle of the game, a .txt file will be created. An unique filename will be assigned.
 The file records the amount of player's items and equipment. 
 It will be exported to the game directory (i.e. the .txt file and the game are located in the same directory).
 When the player resumes the game, the file will be imported to the game.
