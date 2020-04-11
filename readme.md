@@ -6,7 +6,7 @@ YAO Yau Yu    3035575858
 </pre>
 Game Desciption
 ------
-This is an epidemic survival game. At the beginning, player is given with 10 points. He has to distribute the points among three main categories.
+This is an epidemic survival game. During the epidemic, 90% of people on Earth have died because of the disease, the world has become a chao. After staying at home for 6 months, the player has run out of supplies and forced to go out to scout for daily neccessities. player is given with 10 inventory slots. He has to choose wisely what to bring with him in this appocolytic world. Player are able to find these three main resources in his scavenging.
 
 1. Food
 2. Water
