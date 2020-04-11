@@ -6,7 +6,7 @@ YAO Yau Yu    3035575858
 </pre>
 Game Desciption
 ------
-This is an epidemic survival game. During the epidemic, 90% of people on Earth have died because of the disease, the world has become a chao. After staying at home for 6 months, the player has run out of supplies and is forced to go out to scout for daily neccessities. The player is given with 10 inventory slots. He has to choose wisely what to bring with him in this appocolytic world. Player are able to find these three main resources in his scavenge hunt.
+This is an epidemic survival game. During the epidemic, 90% of people on Earth have died because of the disease, the world has become a chao. The society has completely collaped and there are no longer laws, the city is in an anarchy state. Stealing, robbing, killing is normal under this ruleless circumstance. Luckily, at the beginning of the pandemic, you stockpiled a lot of resources and decided to stay at home until the emergence has past. After staying at home for 6 months, the player has run out of supplies and is forced to go out to scout for daily neccessities. The player is given with 10 inventory slots, he has to choose wisely what to bring with him in this appocolytic world. Player are able to find these three main resources in his scavenge hunts.
 
 1. Food
 2. Water
