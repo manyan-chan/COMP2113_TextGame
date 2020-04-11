@@ -35,6 +35,8 @@ Choose one event from a pool of possible triggerable events after player's choic
 E.g. 10% to get two items, 60% to get one item, 30% to get zero item.  
 *(Requirement 1 & 5)
 
+In some scenarios, items or equipment may be confiscated. 
+
 ### Dynamic Inventory System
 Record the input and output of player's items or equipment.  
 *(Requirement 2 & 5)
