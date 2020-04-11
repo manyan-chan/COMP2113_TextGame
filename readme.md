@@ -46,7 +46,7 @@ The file records the amount of player's items and equipment.
 It will be exported to the game directory (i.e. the .txt file and the game are located in the same directory).
 When the player resumes the game, the file will be imported to the game.
 
-If it's gameover, all the game save data will be erased and the game will restart.  
+If that is gameover, all the game save data will be erased and the game will restart.  
 *(Requirement 2, 3 & 4)
 
 ### Scenario Loader
