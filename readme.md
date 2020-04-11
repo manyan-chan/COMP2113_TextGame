@@ -12,7 +12,7 @@ This is an epidemic survival game. During the epidemic, 90% of people on Earth h
 2. Water
 3. Mask
 
-These are the essential elements for survival. If any one of them drops to zero, game ends.
+These are the essential elements for survival. If any of them drops to zero, game ends.
 
 The game lasts for 10 days. The player will undergo 2-3 events everyday. For each event, 3 options will be given. Here is the example.
 
@@ -32,7 +32,7 @@ List of features / functions to be implemented
 ------
 ### Event Randomizer
 Choose one event from a pool of possible triggerable events after player's choice.  
-E.g. 25% to get two items, 50% to get one item, 25% to get zero item.  
+E.g. 10% to get two items, 60% to get one item, 30% to get zero item.  
 *(Requirement 1 & 5)
 
 ### Dynamic Inventory System
@@ -40,8 +40,12 @@ Record the input and output of player's items or equipment.
 *(Requirement 2 & 5)
 
 ### Game state Loading System
-Load the previous game state after re-entering the game.  
-Erase game save and restart the game after gameover.  
+When the player leaves in the middle of the game, a .txt file will be created. 
+The file records the amount of player's items and equipment. 
+It will be exported to the game directory (i.e. the .txt file and the game are located in the same directory)
+When the player resumes the game, the file will be imported to the game.
+
+If it's gameover, all the game save data will be erased and the game will restart.  
 *(Requirement 2, 3 & 4)
 
 ### Scenario Loader
