@@ -6,11 +6,10 @@ YAO Yau Yu    3035575858
 </pre>
 Game Desciption
 ------
-This is an epidemic survival game. At the beginning, user is given with 10 points. He has to distribute the points among three main categories. 
+This is an epidemic survival game. At the beginning, user is given with 10 points. He has to distribute the points among three main categories.
+
 1. Food
-
 2. Water
-
 3. Mask
 
 These are the essential elements for survival. If any one of them drops to zero, game ends.
@@ -18,11 +17,8 @@ These are the essential elements for survival. If any one of them drops to zero,
 The game lasts for 10 days. The user will undergo 2-3 events everyday. For each event, 3 options will be given. Here is the example.
 
 Q: You are going to the school, where do you want to visit?
-
 A. School Hall
-
 B. Physics Labortory
-
 C. Lawn
 
 After he has made the choice, next event will be triggered. 
