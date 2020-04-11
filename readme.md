@@ -17,8 +17,11 @@ These are the essential elements for survival. If any one of them drops to zero,
 The game lasts for 10 days. The user will undergo 2-3 events everyday. For each event, 3 options will be given. Here is the example.
 
 Q: You are going to the school, where do you want to visit?
+
 A. School Hall
+
 B. Physics Labortory
+
 C. Lawn
 
 After he has made the choice, next event will be triggered. 
