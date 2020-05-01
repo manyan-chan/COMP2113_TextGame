@@ -1,0 +1,10 @@
+[Supermarket]
+1st visit: You arrived the supermarket, you find that the shop is guarded by a group of men equipped with knifes.
+When you walked near them, a tall man who seems to be the leader walked to you and shouted,
+"Who the hell are you, GET OFF! Or else I will cut you into pieces."
+Meanwhile, he pull a kitchen knife from his waist.
+You decide to...
+
+A. Escape
+C. Negotiate with him
+B. Pull out a weapon to threaten him
