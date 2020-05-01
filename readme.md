@@ -12,7 +12,7 @@ This is an epidemic survival game. During the epidemic, 90% of people on Earth h
 2. Water
 3. Mask
 
-These are the essential elements for survival. If any of them drops to zero, game ends.
+These are the essential elements for survival. You will consume each resource every day, if any of them drops to zero, game ends.
 
 The game lasts for 10 days. The player will undergo 2-3 events everyday. For each event, 3 options will be given. Here is the example.
 
