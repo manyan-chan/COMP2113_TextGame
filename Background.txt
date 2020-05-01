@@ -1,0 +1,20 @@
+This is an epidemic survival game. 
+During the epidemic, 90% of people on Earth have died because of the disease, the world has become a chao.
+The society has completely collaped and there are no longer laws, the city is in an anarchy state. 
+Stealing, robbing, killing is normal under this ruleless circumstance. 
+Luckily, at the beginning of the pandemic, you stockpiled a lot of resources and decided to stay at home until the emergence has past. 
+After staying at home for 6 months, you have run out of supplies and is forced to go out to scout for daily neccessities. 
+You are given with 10 inventory slots, choose wisely what to bring with you.
+
+What you have at home:
+Food x 10
+Water x 10
+Mask x 10
+Utility knife x 2
+Realistic toy handgun x 1
+Clothes x 5
+Radio x 1
+Notebook & Pen x 1
+Bible x 1
+
+Now choose what you are going to bring.
