@@ -47,7 +47,18 @@ You decide to...
 
 [Help the boy]
 You help the kid wear a mask, you place him at a safe place and leave.
-sentiment_count++
+save_boy = True
 
 [Ignore the boy]
 You do not want to use your precious mask to help the boy, you leave.
+
+3rd visit:
+
+If sentiment_count > 0
+You saw a boy with his parents, the boy looks familiar to you.
+They give you some masks, you gladly receive them.
+mask = mask + 2
+
+else
+Nothing happens, you think you should go to another places.
+*Cancel supermarket option
