@@ -6,6 +6,11 @@ Luckily, at the beginning of the pandemic, you stockpiled a lot of resources and
 After staying at home for 6 months, you have run out of supplies and is forced to go out to scout for daily necessities.
 You are given with 10 inventory slots, choose wisely what to bring with you.
 
+You need food and water to survive.
+Mask is a necessity because the disease is airborn, continuous inhalation of toxic air will result in lung failure.
+The numbers of food, water and mask decrease by one everyday.
+At the end of the day, if any of the resources reach zero. GAMEOVER
+
 What you have at home:
 Food x 10
 Water x 10
