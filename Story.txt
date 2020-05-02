@@ -34,7 +34,7 @@ You have a chance to take away water or food as your reward
 
 [Bread] food++
 [Water] water++
-brutal_count ++
+brutal_count++
 
 2nd visit:
 You come to the supermarket again, there seems to be nobody around unlike last time.
@@ -46,3 +46,8 @@ You see a little boy who fell down onto the ground fainted. According to observa
 You decide to...
 
 [Help the boy]
+You help the kid wear a mask, you place him at a safe place and leave.
+sentiment_count++
+
+[Ignore the boy]
+You do not want to use your precious mask to help the boy, you leave.
