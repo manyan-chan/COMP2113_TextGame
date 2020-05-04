@@ -54,7 +54,7 @@ You do not want to use your precious mask to help the boy, you leave.
 
 3rd visit:
 
-If sentiment_count > 0
+If save_boy = True
 You saw a boy with his parents, the boy looks familiar to you.
 They give you some masks, you gladly receive them.
 mask = mask + 2
