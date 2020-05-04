@@ -1,0 +1,32 @@
+[carsino == false]
+
+You arrived at a coffee shop, you see two guards standing at the front door.
+Inside the shop, you see people rolling dice for some reason.
+You come closer and ask," What are they doing?"
+The guards speak in unison," One bottle of water to enter."
+"No no no," you say," I just want to know what they are doing!"
+The guards speak in unison again," One bottle of water to enter."
+
+You decide to...
+[Display water number]
+A. Give water
+B. Leave
+
+A
+[carsino == true]
+You give the guards a bottle of water, they open the door for you.
+You realise that this coffee shop is actually a casino where people bet resources.
+Are you going to play some games?
+
+Yes [direct to casino.cpp]
+No  [direct to option B]
+
+B
+You left the casino.
+
+>= 2nd visit && carsino == true
+The guards recognise you and open the door for you immediately.
+Are you going to play some games?
+
+Yes [direct to casino.cpp]
+No  [direct to option B]
