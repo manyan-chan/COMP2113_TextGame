@@ -1,5 +1,4 @@
-[Supermarket]
-1st visit: 
+[1]
 You arrived the supermarket, you find that the shop is guarded by a group of men equipped with knifes.
 When you walked near them, a muscular man who seems to be the leader walked to you and shouted,
 "Who the hell are you, GET OFF! Or else I will cut you into pieces."
@@ -9,6 +8,7 @@ You decide to...
 [A] Escape
 [B] Negotiate with him
 [C] Pull out a weapon to threaten him
+[mc]
 
 Outcome [A]
 You fleed from the dangerous situation, the men seems to stop chasing you after you have leave their territory
