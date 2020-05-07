@@ -56,5 +56,5 @@ If the game is over, all the game save data will be erased and the game will res
 
 ### Scenario Loader
 
-Upon receiving player's choice, load a specific text from a txt file for the story the player encounters.  
-*(Requirement 3, 4 & 5)
+Upon receiving player's choice, load a specific story the player encounters.  
+*(Requirement 5)
