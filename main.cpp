@@ -3,6 +3,7 @@
 
 using namespace std;
 int day_count = 0;
+bool carsino = false;
 
 int main()
 {
