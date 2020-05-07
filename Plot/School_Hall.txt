@@ -1,0 +1,21 @@
+[School_Hall]
+
+1st visit: You have not visited the school since graduation. You visit the school hall and find the some of the equipment has changed. You spot the grey door on the right hand side of the hall. You go in and find a mask behind the door 
+
+[mask++]
+
+---
+
+2nd visit: You go on the stage, you move the things around, and you find a pack of biscuit under the drum. You are delighted. However, you pick up the things and find it is just a food package. There are no food inside.
+
+---
+
+3rd visit: You are sad for the last visit: you paid hard effort and could not find any food. Therefore, you decided to go on the stage and search for other food. 
+
+"BANG!" A large noise suddenly goes in your ears.
+
+You turn back your face, you see a man with a 8 inch knife. You are scared and you start to negotiate with him. At the end, you are forced to give out half of you food as condition offer for leaving. 
+
+[Food = Food / 2]
+
+*Cancel School_Hall Option
