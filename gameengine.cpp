@@ -4,40 +4,11 @@
 
 using namespace std;
 
-struct location_array{
-  string location;
-  int visit_time; //between 1-3
-  bool mc;
-};
-
-void open_location_info(int resource_list[], int resource_amount[], int arraySize){
-
-  //creating the array
-
-  ifstream fin;
-  fin.open("plot/"+ location + ".txt");
-  if (fin.fail()){
-    exit(1);
-  }
-  string line;
-  while (getline(fin, line)){
-    cout << line;
-  }
-  fin.close();
-
-  //user is going to input his choice
-  char choice;
-  cout << "Your choice is: ";
-  cin >> choice;
-
-}
-
-
 //------------------------------------------------------------------------------------------------------------//
 
 //cases
 // A is supermarket
-// B is laboratory
+// B is hospital
 // C is coffee shop
 // D is convenient store
 // E is school hall
@@ -50,6 +21,7 @@ void game_engine()
   string location;
 
   //--------------------- load location database, can put in separate file ------------------------
+  const int location_array_size;
   location_array location_database[27];
   ifstream loc_master;
   loc_master.open("plot/location_master.txt");
@@ -62,40 +34,51 @@ void game_engine()
     fin >> location_database[i].mc;
   }
   //--------------------- load location database, can put in separate file ------------------------
+  int location_count [9] = {1, 1, 1, 1, 1, 1, 1, 1, 1}; //between 1-3, indicated the coming event is the n-th visit time
+  //{"supermarket", "hospital", "coffeeshop", "convenientstore", "schoolhall", "chemistrylaboratory", "lawn", "communitymarket"};
 
+  int frequency; //incidate the n-th visit time
   switch (cases)
   {
     case ('A'):
-        location = "supermarket";
-        open_location_info(resource_list, resource_amount, arraySize, location);
+        frequency = location_count[0]；
+        supermarket();
+        location_count[0]++;
         break;
     case ('B'):
-        location = "laboratory";
-        laboratory();
+        frequency = location_count[1]；
+        hospital();
+        location_count[1]++;
         break;
     case ('C'):
-        location = "coffeeshop";
+        frequency = location_count[2]；
         coffeeshop();
+        location_count[2]++;
         break;
     case ('D'):
-        location = "convenientstore";
+        frequency = location_count[3]；
         convenientstore();
+        location_count[3]++;
         break;
     case ('E'):
-        location = "schoolhall";
+        frequency = location_count[4]；
         schoolhall();
+        location_count[4]++;
         break;
     case ('F'):
-        location = "chemistrylaboratory";
+        frequency = location_count[5]；
         chemistrylaboratory();
+        location_count[5]++;
         break;
     case ('G'):
-        location = "lawn";
+        frequency = location_count[6]；
         lawn();
+        location_count[6]++;
         break;
     case ('H'):
-        location = "communitymarket";
+        frequency = location_count[7]；
         communitymarket();
+        location_count[7]++;
         break;
   }
   day_count++;

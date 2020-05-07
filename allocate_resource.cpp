@@ -2,16 +2,15 @@
 #include <iomanip>
 using namespace std;
 
-void allocate_resource (string resource_list[], int resource_amount[], int arraySize){
+//void allocate_resource (vector<string>& resource_list, vector<int>& resource_amount, vector<int>& resource_upperbound, int resource_vector_size, int &max){
+void allocate_resource (){  
   cout << "Please input the things you want bring, you can bring at max 18 units." << endl;
   cout << "---------------------------" << endl;
-  int * resource_upperbound = new int [arraySize] {10, 10, 10, 2, 1, 5, 1, 1, 1};
   //reason of dynamic: this array can be deleted when the function ends
-  int max = 18;
   int upper_limit, input;
   bool trigger_1 = false, trigger_2 = false;
   while (max > 0){
-    for (int i = 0; i < arraySize; i++){
+    for (int i = 0; i < resource_vector_size; i++){
       if (max > 0){
         upper_limit = resource_upperbound[i];
         if (upper_limit == 0){
@@ -66,13 +65,11 @@ void allocate_resource (string resource_list[], int resource_amount[], int array
   }
 
   cout << "Here are your belongings: " << endl;
-  for (int i = 0; i < arraySize; i++){
+  for (int i = 0; i < resource_vector_size; i++){
     cout << resource_list[i] << ": " << resource_amount[i] << endl;
   }
   //cout << setfill('-');
   //cout << setw(20) << endl;
   cout << "---------------------------" << endl;
   cout << "Game start." << endl;
-
-  delete [] resource_upperbound;
 }
