@@ -2,11 +2,11 @@
 #include <iomanip>
 using namespace std;
 
-void allocate_resource (vector<string>& resource_list, vector<int>& resource_amount, vector<int>& resource_upperbound, int resource_vector_size){
+//void allocate_resource (vector<string>& resource_list, vector<int>& resource_amount, vector<int>& resource_upperbound, int resource_vector_size, int &max){
+void allocate_resource (){  
   cout << "Please input the things you want bring, you can bring at max 18 units." << endl;
   cout << "---------------------------" << endl;
   //reason of dynamic: this array can be deleted when the function ends
-  int max = 18;
   int upper_limit, input;
   bool trigger_1 = false, trigger_2 = false;
   while (max > 0){
@@ -72,5 +72,4 @@ void allocate_resource (vector<string>& resource_list, vector<int>& resource_amo
   //cout << setw(20) << endl;
   cout << "---------------------------" << endl;
   cout << "Game start." << endl;
-
 }
