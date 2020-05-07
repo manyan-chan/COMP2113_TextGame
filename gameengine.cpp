@@ -4,6 +4,7 @@
 #include "allocate_resource.h"
 #include "coffeeshop.h"
 #include "supermarket.h"
+#include "convenientstore.h"
 #include "main.h"
 using namespace std;
 
