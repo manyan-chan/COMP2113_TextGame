@@ -7,6 +7,8 @@
 #include "schoolhall.h"
 #include "convenientstore.h"
 #include "chemistrylaboratory.h"
+#include "communitymarket.h"
+#include "hospital.h"
 #include "lawn.h"
 #include "main.h"
 #include "gameengine.h"

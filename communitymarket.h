@@ -1,6 +1,6 @@
 #ifndef communitym
 #define communitym
 
-void communitym;
+void communitymarket();
 
 #endif

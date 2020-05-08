@@ -1,5 +1,5 @@
-#ifndef hospital
-#define hospital
+#ifndef hos
+#define hos
 
 void hospital();
 

@@ -36,7 +36,7 @@ void hospital(){
       cout << "A: 1/F" << endl;
       cout << "B: 2/F" << endl;
       cin >> choice;
-      while (choice != 'A' && choice != 'B'){
+      while (choice != 'A' && choice != 'B'){ 
         cout << "Error! Please enter again (A / B): " << endl;
       }
       if (choice == 'A'){
