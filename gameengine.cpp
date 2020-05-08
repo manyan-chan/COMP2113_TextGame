@@ -6,6 +6,8 @@
 #include "supermarket.h"
 #include "schoolhall.h"
 #include "convenientstore.h"
+#include "chemistrylaboratory.h"
+#include "lawn.h"
 #include "main.h"
 #include "gameengine.h"
 #include "communitymarket.h"

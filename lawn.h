@@ -1,5 +1,6 @@
-#ifndef lawn
-#define lawn
+#ifndef lawn_
+#define lawn_
+
 
 void lawn();
 

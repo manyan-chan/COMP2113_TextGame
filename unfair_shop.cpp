@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include "main.h"
 using namespace std;
 
 void print_resource(int &resource_vector_size, vector<string> &resource_list, vector<int> &resource_amount){
