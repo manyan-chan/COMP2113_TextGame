@@ -1,9 +1,11 @@
 #include <iostream>
+#include <vector>
 #include <stdlib.h>
 #include <time.h>
 #include "allocate_resource.h"
 #include "gameengine.h"
 #include "main.h"
+#include "coffeeshop.h"
 using namespace std;
 
 void gameble()
@@ -11,10 +13,10 @@ void gameble()
     int dice_player, dice_opponent;
     char gamebleYN;
     srand(time(NULL));
-
     cout << "Gambling Rule:\n"
          << "You and your opponent will roll a dice, who get the higher point wins.\n"
          << "Are you going to gamble? Y/N?" << endl;
+
     while (true)
     {
     GAME:

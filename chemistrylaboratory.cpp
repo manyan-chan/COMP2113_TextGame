@@ -1,5 +1,5 @@
 #include <iostream>
-#include "allocate_resource.h"
+#include <vector>
 #include "gameengine.h"
 #include "main.h"
 using namespace std;

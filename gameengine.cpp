@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <fstream>
 #include <string>
 #include "allocate_resource.h"
@@ -17,6 +18,9 @@ using namespace std;
 
 //------------------------------------------------------------------------------------------------------------//
 
+
+
+
 //cases
 // A is supermarket
 // B is hospital
@@ -29,6 +33,7 @@ using namespace std;
 
 void game_engine()
 {
+    allocate_resource();
 
     for (int day = 0; day < 7; day++)
     {

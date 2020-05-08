@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 #include <stdlib.h>
 #include <time.h>
-#include <main.h>
-#include <gameengine.h>
+#include "main.h"
+#include "convenientstore.h"
 
 using namespace std;
 

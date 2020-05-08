@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "main.h"
+#include "allocate_resource.h"
 using namespace std;
 
 //void allocate_resource (vector<string>& resource_list, vector<int>& resource_amount, vector<int>& resource_upperbound, int resource_vector_size, int &max){
@@ -11,11 +12,11 @@ void allocate_resource()
   //reason of dynamic: this array can be deleted when the function ends
   int upper_limit, input;
   bool trigger_1 = false, trigger_2 = false;
-  while (max > 0)
+  while (maximum > 0)
   {
     for (int i = 0; i < resource_vector_size; i++)
     {
-      if (max > 0)
+      if (maximum > 0)
       {
         upper_limit = resource_upperbound[i];
         if (upper_limit == 0)
@@ -25,16 +26,16 @@ void allocate_resource()
         }
         else
         {
-          cout << "You have " << max << " credits left." << endl;
+          cout << "You have " << maximum << " credits left." << endl;
           cout << "Current amount of " << resource_list[i] << ": " << resource_amount[i] << endl;
           cout << "How many do you want? (0 - " << upper_limit << "): ";
           cin >> input;
         }
-        while (input < 0 || input > upper_limit || (max - input) < 0)
+        while (input < 0 || input > upper_limit || (maximum - input) < 0)
         {
           //input < 0 || input > upper_limit  means out of range
           //(max - input) < 0 means he have chosen more than 15 units
-          if ((max - input) < 0)
+          if ((maximum - input) < 0)
           {
             cout << "You do not have enough credit." << endl;
             trigger_1 = true;
@@ -59,7 +60,7 @@ void allocate_resource()
           }
         }
         resource_amount[i] += input;
-        max -= input;
+        maximum -= input;
         resource_upperbound[i] -= input;
         if (upper_limit != 0)
         {
@@ -73,7 +74,7 @@ void allocate_resource()
         trigger_2 = false;
       }
     }
-    if (max > 0)
+    if (maximum > 0)
     {
       cout << "You still have credit, please add the *extra* units on the equipment you want:" << endl;
     }
