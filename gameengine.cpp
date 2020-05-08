@@ -17,9 +17,7 @@
 using namespace std;
 
 //------------------------------------------------------------------------------------------------------------//
-
-
-
+int frequency = 0;
 
 //cases
 // A is supermarket
@@ -33,11 +31,12 @@ using namespace std;
 
 void game_engine()
 {
+    
     allocate_resource();
 
     for (int day = 0; day < 7; day++)
     {
-        for (int frequency = 0; frequency < 3; frequency++)
+        for (; frequency < 3; frequency++)
         {
             char cases;
 
@@ -77,6 +76,7 @@ void game_engine()
                 break;
             }
         }
+        frequency = 0;
         if (day == 6)
         {
             cout << "you win!" << endl;

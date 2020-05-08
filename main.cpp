@@ -2,18 +2,8 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#include "allocate_resource.h"
-#include "coffeeshop.h"
-#include "supermarket.h"
-#include "schoolhall.h"
-#include "convenientstore.h"
-#include "chemistrylaboratory.h"
-#include "communitymarket.h"
-#include "hospital.h"
-#include "lawn.h"
 #include "main.h"
 #include "gameengine.h"
-#include "communitymarket.h"
 #include "displaybackground.h"
 
 using namespace std;
