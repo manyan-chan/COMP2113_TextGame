@@ -1,5 +1,5 @@
-#ifndef cstore
-#define cstore
+#ifndef lawn_
+#define lawn_
 
 void lawn();
 

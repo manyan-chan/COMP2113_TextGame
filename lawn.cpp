@@ -62,7 +62,7 @@ void lawn(){
       cout << "You take away his bag. You check for the bag and find two clean masks inside." << endl;
       cout << "mask + 2" << endl;
       resource_amount[2] += 2;
-      brutal_count++;
+      sentiment_count++;
     }
     count++;
   }
