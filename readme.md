@@ -42,19 +42,9 @@ In some events, items or equipment may be confiscated.
 ### Dynamic Inventory System
 
 Record the change of player's items or equipment.  
-*(Requirement 2 & 5)
-
-### Game state Loading System
-
-When the player leaves in the middle of the game, a .txt file will be created. An unique filename will be assigned.
-The file records the amount of player's items and equipment.
-It will be exported to the game directory (i.e. the .txt file and the game are located in the same directory).
-When the player resumes the game, the file will be imported to the game.
-
-If the game is over, all the game save data will be erased and the game will restart.  
-*(Requirement 2, 3 & 4)
+*(Requirement 2, 3 & 5)
 
 ### Scenario Loader
 
 Upon receiving player's choice, load a specific story the player encounters.  
-*(Requirement 5)
+*(Requirement 4 & 5)
