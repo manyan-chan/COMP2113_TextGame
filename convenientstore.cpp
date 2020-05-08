@@ -87,7 +87,8 @@ void convenientstore()
     }
     else if (location_count[3] > 3)
     {
-        cout << "You find nothing interesting. You decide not to come here again." << endl;
+        cout << "You find nothing interesting, you decide not to come here again. Please choose any other place to go!" << endl;
+        frequency--;
         return;
     }
 }

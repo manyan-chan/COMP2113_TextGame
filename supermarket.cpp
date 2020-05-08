@@ -142,7 +142,8 @@ void supermarket()
     }
     else
     {
-        cout << "Nothing happens, you think you should go to another places." << endl;
+        cout << "Nothing happens, you think you should go to another places. Please choose another place to go!" << endl;
+        frequency--;
         return;
     }
 }
