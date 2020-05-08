@@ -9,7 +9,7 @@ void lawn(){
   //vector<int> resource_amount = {0, 0, 0, 0, 0, 0, 0, 0, 0};
   //vector<int> resource_upperbound = {10, 10, 10, 2, 1, 5, 1, 1, 1};
   //max;
-  int count = 1, lawn_sentiment_count = 1;
+  int count = location_count[6], lawn_sentiment_count = 0;
   char choice;
   if (count == 1){
     cout << "This is your 1st visit to lawn" << endl;
@@ -32,7 +32,7 @@ void lawn(){
     else{ // B
       cout << "No change in resources." << endl;
     }
-    count++;
+    //count++;
   }
   else if (count == 2){
     cout << "This is your 2nd visit to lawn" << endl;
@@ -64,7 +64,7 @@ void lawn(){
       resource_amount[2] += 2;
       brutal_count++;
     }
-    count++;
+    //count++;
   }
   else{ //the 3rd visit
     cout << "This is the third visit. You meet the old man again" << endl;
@@ -72,8 +72,8 @@ void lawn(){
       //the user helped the man before
       cout << "Jesus, you saved me last time. I am going to give you these three things as reward." << endl;
       cout << "food + 1" << endl;
-	    cout << "water + 1" << endl;
-	    cout << "mask + 1" << endl;
+      cout << "water + 1" << endl;
+      cout << "mask + 1" << endl;
       for (int i = 0; i < 3; i++){
         resource_amount[i]++;
       }
@@ -101,6 +101,6 @@ void lawn(){
         }
       }
     }
-    count++;
+    //count++;
   }
 }
