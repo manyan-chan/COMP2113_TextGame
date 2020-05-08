@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <game.h>
+#include <main.h>
 #include <gameengine.h>
 using namespace std;
 
