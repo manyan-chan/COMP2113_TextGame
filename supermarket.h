@@ -97,7 +97,7 @@ void supermarket()
              << "Suddenly, you heard a loud noise, you hide behind a corner and peek.\n"
              << "You see a little boy who fell down onto the ground fainted. According to observation, he does not wear a mask.\n"
              << "You decide to... A/B?\n"
-             << "A. Save him"
+             << "A. Save him\n"
              << "B. Ignore him" << endl;
 
         while (true)

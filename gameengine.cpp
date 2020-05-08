@@ -31,7 +31,7 @@ int frequency = 0;
 
 void game_engine()
 {
-    
+
     allocate_resource();
 
     for (int day = 0; day < 7; day++)
@@ -39,7 +39,24 @@ void game_engine()
         for (; frequency < 3; frequency++)
         {
             char cases;
-
+            cout << "There are 8 places you can visit, choose your location wisely.\n"
+                 << "A. Supermarket\n"
+                 << "B. Hospital\n"
+                 << "C. Coffee shop\n"
+                 << "D. Convenient store\n"
+                 << "E. School hall\n"
+                 << "F. Chemistry laboratory\n"
+                 << "G. Lawn\n"
+                 << "H. Community market"
+                 << "Input: " << endl;
+            while (true)
+            {
+                cin >> cases;
+                if (cases == 'A' || cases == 'B' || cases == 'C' || cases == 'D' || cases == 'E' || cases == 'F' || cases == 'G' || cases == 'H')
+                    break;
+                else
+                    cout << "Please try again! A-H?";
+            }
             switch (cases)
             {
             case ('A'):
