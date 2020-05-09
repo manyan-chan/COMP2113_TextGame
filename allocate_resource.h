@@ -10,6 +10,7 @@ using namespace std;
 //void allocate_resource (vector<string>& resource_list, vector<int>& resource_amount, vector<int>& resource_upperbound, int resource_vector_size, int &max){
 void allocate_resource()
 {
+  int * temp_array = new int [9] {10, 10, 10, 1, 1, 1, 1, 1, 1};
   cout << "Please input the things you want bring, you can bring at max 18 units." << endl;
   cout << "---------------------------" << endl;
   //reason of dynamic: this array can be deleted when the function ends
@@ -21,7 +22,7 @@ void allocate_resource()
     {
       if (maximum > 0)
       {
-        upper_limit = resource_upperbound[i];
+        upper_limit = temp_array[i];
         if (upper_limit == 0)
         {
           cout << "You have got all " << resource_list[i] << "already." << endl;
@@ -64,7 +65,7 @@ void allocate_resource()
         }
         resource_amount[i] += input;
         maximum -= input;
-        resource_upperbound[i] -= input;
+        temp_array[i] -= input;
         if (upper_limit != 0)
         {
           cout << "Success" << endl;
@@ -92,6 +93,8 @@ void allocate_resource()
   //cout << setw(20) << endl;
   cout << "---------------------------" << endl;
   cout << "Game start." << endl;
+
+  delete [] temp_array;
 }
 
 

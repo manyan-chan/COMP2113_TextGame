@@ -2,6 +2,8 @@
 #include <vector>
 #include <fstream>
 #include <string>
+#include "displaybackground.h"
+#include "resource_overflow.h"
 #include "allocate_resource.h"
 #include "coffeeshop.h"
 #include "supermarket.h"
@@ -30,9 +32,10 @@ using namespace std;
 
 void game_engine()
 {
-
+    display_background();
+    cout << setfill('=') << setw(28) << " " << endl;
     allocate_resource();
-
+    system("clear");
     for (int day = 1; day < 8; day++)
     {
         cout << "Today is day " << day << " of your survival." << endl;
@@ -90,7 +93,13 @@ void game_engine()
                 cout << "Please try again! A-H?";
                 frequency--;
             }
-            cout << "===========================" << endl;
+            cout << setfill('=') << setw(28) << " " << endl;
+            resource_overflow();
+            system("clear");
+        }
+        if (resource_amount[0] == 0 || resource_amount[1] == 0 || resource_amount[2] == 0)
+        {
+            gameover = true;
         }
         if (gameover)
         {

@@ -4,7 +4,6 @@
 #include <string>
 #include "main.h"
 #include "gameengine.h"
-#include "displaybackground.h"
 
 using namespace std;
 
@@ -12,7 +11,7 @@ int sentiment_count = 0;
 int day_count = 0;
 std::vector <std::string> resource_list = {"Food", "Water", "Mask", "Utility knife", "Realistic toy gun", "First Aids", "Radio", "Notebook & Pen", "Bible"};
 std::vector<int> resource_amount = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-std::vector<int> resource_upperbound = {10, 10, 10, 1, 1, 3, 1, 1, 1};
+std::vector<int> resource_upperbound = {10, 10, 10, 1, 1, 1, 1, 1, 1};
 int resource_vector_size = resource_list.size();
 int maximum = 18;
 int lawn_sentiment_count = 0;
@@ -28,12 +27,6 @@ int main()
 {
     //-------------------------------------------------------------//
 
-    display_background();
-
-    //-------------------------------------------------------------//
-
-
-    //-------------------------------------------------------------//
 
     game_engine();
 
