@@ -32,10 +32,11 @@ using namespace std;
 
 void game_engine()
 {
+    system("clear");
     display_background();
     cout << setfill('=') << setw(28) << " " << endl;
     allocate_resource();
-    system("clear");
+    cout << setfill('=') << setw(28) << " " << endl;
     for (int day = 1; day < 8; day++)
     {
         cout << "Today is day " << day << " of your survival." << endl;
@@ -54,6 +55,7 @@ void game_engine()
                  << "Input: " << endl;
 
             cin >> cases;
+            system("clear");
 
             switch (cases)
             {
@@ -95,17 +97,23 @@ void game_engine()
             }
             cout << setfill('=') << setw(28) << " " << endl;
             resource_overflow();
-            system("clear");
         }
         if (resource_amount[0] == 0 || resource_amount[1] == 0 || resource_amount[2] == 0)
         {
             gameover = true;
+            cout << "You cannot make the day because a resource reaches zero..." << endl;
         }
         if (gameover)
         {
             cout << "You lose!" << endl;
             return;
         }
+        cout << "You have consumed 1 food, 1 water and 1 mask during the day." << endl;
+
+        resource_amount[0]--;
+        resource_amount[1]--;
+        resource_amount[2]--;
+
         frequency = 0;
         if (day == 7)
         {

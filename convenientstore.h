@@ -53,7 +53,7 @@ void convenientstore()
                 if (resource_amount[i] > item)
                     item = i;
             }
-            cout << "You beg for mercy, the gangster spare you lucky.\n"
+            cout << "You beg for mercy, the gangster did not kill you luckily.\n"
                  << "They see you have got a lot of " << resource_list[item] << ". So they take away two." << endl;
             resource_amount[item]--;
             resource_amount[item]--;
