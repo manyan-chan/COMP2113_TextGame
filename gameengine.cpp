@@ -33,8 +33,9 @@ void game_engine()
 
     allocate_resource();
 
-    for (int day = 0; day < 7; day++)
+    for (int day = 1; day < 8; day++)
     {
+        cout << "Today is day " << day << " of your survival." << endl;
         for (; frequency < 3; frequency++)
         {
             char cases;
@@ -50,7 +51,7 @@ void game_engine()
                  << "Input: " << endl;
 
             cin >> cases;
-            
+
             switch (cases)
             {
             case ('A'):
@@ -89,11 +90,17 @@ void game_engine()
                 cout << "Please try again! A-H?";
                 frequency--;
             }
+            cout << "===========================" << endl;
+        }
+        if (gameover)
+        {
+            cout << "You lose!" << endl;
+            return;
         }
         frequency = 0;
-        if (day == 6)
+        if (day == 7)
         {
-            cout << "you win!" << endl;
+            cout << "You successfully survive 7 days, you win!" << endl;
         }
     }
     return;

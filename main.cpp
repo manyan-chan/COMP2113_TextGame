@@ -22,7 +22,7 @@ int location_count[9] = {1, 1, 1, 1, 1, 1, 1, 1, 1}; //between 1-3, indicated th
 //{"supermarket", "hospital", "coffeeshop", "convenientstore", "schoolhall", "chemistrylaboratory", "lawn", "communitymarket"};
 bool casino = false;
 int frequency = 0;
-
+bool gameover = false;
 
 int main()
 {

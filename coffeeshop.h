@@ -18,13 +18,14 @@ void gameble()
          << "You and your opponent will roll a dice, who get the higher point wins.\n"
          << "Are you going to gamble? Y/N?" << endl;
 
-    GAME:
+GAME:
     while (true)
     {
         cin >> gamebleYN;
         if (gamebleYN == "Y")
         {
-            if (resource_amount[0] == 0 && resource_amount[1] == 0 && resource_amount[2] == 0){
+            if (resource_amount[0] == 0 && resource_amount[1] == 0 && resource_amount[2] == 0)
+            {
                 cout << "You have nothing to bet! So you leave the coffee shop." << endl;
                 return;
             }
@@ -32,7 +33,7 @@ void gameble()
             {
                 cout << "You have " << resource_amount[i] << " " << resource_list[i] << endl;
             }
-            cout << "What are you going to bet?";
+            cout << "What are you going to bet?\n";
             int bet;
             cout << "0 is food, 1 is water, 2 is mask\n"
                  << "Please input your bet. 0/1/2?" << endl;
@@ -46,10 +47,11 @@ void gameble()
                 else
                 {
                     resource_amount[bet]--;
-                REROLL:
-                    srand(time(NULL));
+                    int t = time(NULL);
+                REROLL:              
+                    srand(t);
                     dice_player = rand() % 6 + 1;
-                    srand(time(NULL));
+                    srand(t + 123);
                     dice_opponent = rand() % 6 + 1;
 
                     if (dice_player > dice_opponent)
@@ -68,9 +70,12 @@ void gameble()
                              << "Are you going to play again? Y/N" << endl;
                         goto GAME;
                     }
-                    else if (dice_player == dice_opponent){
+                    else if (dice_player == dice_opponent)
+                    {
                         cout << "you rolled a " << dice_player << " while your opponent rolled a " << dice_opponent << "\n"
-                             << "You draw, so you rolled your dice again.\n" << endl;
+                             << "You draw, so you rolled your dice again.\n"
+                             << endl;
+                        t++;
                         goto REROLL;
                     }
                 }

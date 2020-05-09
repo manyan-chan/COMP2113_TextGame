@@ -96,7 +96,7 @@ void lawn()
     }
     else
     {
-      cout << "\"You stole all my things when i was feeling unwell last time!\"" << endl;
+      cout << "\"You stole all my things when I was feeling unwell last time!\"" << endl;
       cout << "The man takes out his gun and points to you" << endl;
       if (resource_amount[8] == 1)
       {
@@ -107,6 +107,7 @@ void lawn()
         cout << "bible - 1" << endl;
         cout << "You have never expected the bible can save your life." << endl;
         resource_amount[8]--;
+        return;
       }
       else
       {
@@ -115,10 +116,7 @@ void lawn()
         cout << "Bang!" << endl;
         cout << "You are dizzy and fainted" << endl;
         cout << "Game Over" << endl;
-        for (int i = 0; i < resource_vector_size; i++)
-        {
-          resource_amount[i] = 0;
-        }
+        gameover = true;
       }
     }
   }

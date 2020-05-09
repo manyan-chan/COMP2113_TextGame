@@ -45,10 +45,10 @@ void chemistrylaboratory()
     {
         cout << "This is the 2nd time that you visit the chemistry lab. You look around and find all the things are gone.\n"
              << "Suddenly, you hear some someone is outside the door. You hide under the desk.\n"
-             << "\"I am checking if there are anything useful in the chem lab\",a young girl says. She seems to be less than 18 years old and shorter than 155cm."
+             << "\"I am checking if there are anything useful in the chem lab\",a young girl says. She seems to be less than 18 years old and shorter than 155cm.\n"
              << "You see her hands are holding 3 masks. You are going to:\n"
              << "A. Hit her head with a bible and take her masks\n"
-             << "B. Introduce yourself";
+             << "B. Introduce yourself\n";
         while (true)
         {
             cin >> chemlab_choice;
@@ -78,7 +78,7 @@ void chemistrylaboratory()
         {
             cout << "You stand up with your hands raised up. \"Hi! This is Jacky.\" and you start your self-introduction.\n"
                  << "In the conservation, you know she is called Ashley. You are now friend with her.\n"
-                 << "In the chat, you acknowledge that she want to write diary desperately and she is willing to give out 3 masks for a set of notebook & pen."
+                 << "In the chat, you acknowledge that she want to write diary desperately and she is willing to give out 3 masks for a set of notebook & pen.\n"
                  << "Are you going to accept the offer? Y/N?\n";
             while (true)
             {
