@@ -12,7 +12,7 @@ using namespace std;
 
 void convenientstore()
 {
-    char choice;
+    string choice;
     if (location_count[3] == 1)
     {
         cout << "You find some food in the convenient store.\n"
@@ -38,14 +38,14 @@ void convenientstore()
         while (true)
         {
             cin >> choice;
-            if (choice == 'A' || choice == 'B')
+            if (choice == "A" || choice == "B")
             {
                 break;
             }
             else
                 cout << "Please try again! A/B?";
         }
-        if (choice == 'A')
+        if (choice == "A")
         {
             int item = 0;
             for (int i = 0; i < 3; i++)
@@ -62,18 +62,18 @@ void convenientstore()
                 resource_amount[item] = 0; //prevent negative num
             }
         }
-        else
+        else if (choice == "B")
         {
             srand(time(NULL));
             int prob = rand() % 2;
             if (prob == 1)
             {
                 cout << "You successfully intimidate the gangster by telling them that your dad is Winnie the Pooh, a famous celebrity in the chaotic era.\n"
-                     << "They let you go with peace." << endl;
+                     << "They let you go in peace." << endl;
             }
             else
             {
-                cout << "You tell them your mum is fat, but they ain't scared of your fat mother."
+                cout << "You tell them your mum is fat, but they ain't scared of your fat mother.\n"
                      << "They take away one food and one water from you." << endl;
                 resource_amount[0]--;
                 resource_amount[1]--;

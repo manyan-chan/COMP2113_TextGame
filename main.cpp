@@ -21,6 +21,7 @@ char cases;
 int location_count[9] = {1, 1, 1, 1, 1, 1, 1, 1, 1}; //between 1-3, indicated the coming event is the n-th visit time
 //{"supermarket", "hospital", "coffeeshop", "convenientstore", "schoolhall", "chemistrylaboratory", "lawn", "communitymarket"};
 bool casino = false;
+int frequency = 0;
 
 
 int main()

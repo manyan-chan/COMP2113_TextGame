@@ -10,8 +10,8 @@ using namespace std;
 
 void supermarket()
 {
-    char supermarket_choice;
-    char trade;
+    string supermarket_choice;
+    string trade;
     if (location_count[0] == 1)
     {
         cout << "You arrived the supermarket, you find that the shop is guarded by a group of men equipped with knifes.\n"
@@ -26,17 +26,19 @@ void supermarket()
         while (true)
         {
             cin >> supermarket_choice;
-            if (supermarket_choice == 'A' || supermarket_choice == 'B' || supermarket_choice == 'C')
+            if (supermarket_choice == "A" || supermarket_choice == "B" || supermarket_choice == "C")
                 break;
             else
                 cout << "please try again! A/B/C?" << endl;
         }
-        switch (supermarket_choice)
+        if (supermarket_choice == "A")
         {
-        case ('A'):
+
             cout << "You fleed from the dangerous situation, the men seems to stop chasing you after you have leave their territory" << endl;
             return;
-        case ('B'):
+        }
+        else if (supermarket_choice == "B")
+        {
             cout << "Calm down! I come here with no harm,\" You put your hands in the air and say,\" I just want to trade with you guys\n"
                  << "\"hmmm... We have some excess food and water,\" he put away his knife as he speaks,\" We want first aid kit desperately.\""
                  << "Do you want to trade with him? Y/N?\n"
@@ -45,12 +47,12 @@ void supermarket()
             {
 
                 cin >> trade;
-                if (supermarket_choice == 'Y' || supermarket_choice == 'N')
+                if (trade == "Y" || trade == "N")
                     break;
                 else
                     cout << "please try again! Y/N?" << endl;
             }
-            if (trade == 'Y')
+            if (trade == "Y")
             {
                 if (resource_amount[5] == 0)
                 {
@@ -69,8 +71,11 @@ void supermarket()
             else
             {
                 cout << "You rejected the offer and left." << endl;
+                return;
             }
-        case ('C'):
+        }
+        else if (supermarket_choice == "C")
+        {
             if (resource_amount[4] == 1)
             {
                 cout << "\"PUT YOUR WEAPON DOWN\" You yelled,\" I DON'T WANT TO HURT ANY OF YOU\"\n"
@@ -87,9 +92,11 @@ void supermarket()
             {
                 cout << "You don't have a (toy) gun :("
                      << "You fleed from the dangerous situation, the men seems to stop chasing you after you have leave their territory" << endl;
+                return;
             }
         }
     }
+
     else if (location_count[0] == 2)
     {
         cout << "You come to the supermarket again, there seems to be nobody around unlike last time.\n"
@@ -103,12 +110,12 @@ void supermarket()
         while (true)
         {
             cin >> supermarket_choice;
-            if (supermarket_choice == 'A' || supermarket_choice == 'B')
+            if (supermarket_choice == "A" || supermarket_choice == "B")
                 break;
             else
                 cout << "please try again! A/B?" << endl;
         }
-        if (supermarket_choice == 'A')
+        if (supermarket_choice == "A")
         {
             if (resource_amount[2] > 0)
             {

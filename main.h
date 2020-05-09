@@ -18,5 +18,6 @@ extern int location_count[9]; //between 1-3, indicated the coming event is the n
 //{"supermarket", "hospital", "coffeeshop", "convenientstore", "schoolhall", "chemistrylaboratory", "lawn", "communitymarket"};
 extern bool casino;
 extern int frequency;
+extern int lawn_sentiment_count;
 
 #endif

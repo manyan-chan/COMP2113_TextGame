@@ -1,6 +1,5 @@
 #ifndef coffee
 #define coffee
-
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
@@ -14,17 +13,16 @@ using namespace std;
 void gameble()
 {
     int dice_player, dice_opponent;
-    char gamebleYN;
-    srand(time(NULL));
+    string gamebleYN;
     cout << "Gambling Rule:\n"
          << "You and your opponent will roll a dice, who get the higher point wins.\n"
          << "Are you going to gamble? Y/N?" << endl;
 
+    GAME:
     while (true)
     {
-    GAME:
         cin >> gamebleYN;
-        if (gamebleYN == 'Y')
+        if (gamebleYN == "Y")
         {
             if (resource_amount[0] == 0 && resource_amount[1] == 0 && resource_amount[2] == 0){
                 cout << "You have nothing to bet! So you leave the coffee shop." << endl;
@@ -51,6 +49,7 @@ void gameble()
                 REROLL:
                     srand(time(NULL));
                     dice_player = rand() % 6 + 1;
+                    srand(time(NULL));
                     dice_opponent = rand() % 6 + 1;
 
                     if (dice_player > dice_opponent)
@@ -77,7 +76,7 @@ void gameble()
                 }
             }
         }
-        else if (gamebleYN == 'N')
+        else if (gamebleYN == "N")
         {
             cout << "You leave the coffee shop." << endl;
             return;
@@ -86,8 +85,8 @@ void gameble()
 }
 void coffeeshop()
 {
-    char coffee_mc;
-    char gamebleYN;
+    string coffee_mc;
+    string gamebleYN;
 
     if (location_count[2] == 1)
     {
@@ -109,14 +108,14 @@ void coffeeshop()
         while (true)
         {
             cin >> coffee_mc;
-            if (coffee_mc == 'A' || coffee_mc == 'B')
+            if (coffee_mc == "A" || coffee_mc == "B")
             {
                 break;
             }
             else
                 cout << "Please try again! A/B?" << endl;
         }
-        if (coffee_mc == 'A')
+        if (coffee_mc == "A")
         {
             if (resource_amount[1] == 0)
             {
@@ -136,14 +135,14 @@ void coffeeshop()
             while (true)
             {
                 cin >> gamebleYN;
-                if (gamebleYN == 'Y' || gamebleYN == 'N')
+                if (gamebleYN == "Y" || gamebleYN == "N")
                 {
                     break;
                 }
                 else
                     cout << "Please try again! Y/N?" << endl;
             }
-            if (gamebleYN == 'Y')
+            if (gamebleYN == "Y")
             {
                 gameble();
                 return;
@@ -151,6 +150,7 @@ void coffeeshop()
             else
             {
                 cout << "You leave the coffee shop." << endl;
+                return;
             }
         }
     }
@@ -161,14 +161,14 @@ void coffeeshop()
         while (true)
         {
             cin >> gamebleYN;
-            if (gamebleYN == 'Y' || gamebleYN == 'N')
+            if (gamebleYN == "Y" || gamebleYN == "N")
             {
                 break;
             }
             else
                 cout << "Please try again! Y/N?" << endl;
         }
-        if (gamebleYN == 'Y')
+        if (gamebleYN == "Y")
         {
             gameble();
             return;
@@ -176,6 +176,7 @@ void coffeeshop()
         else
         {
             cout << "You leave the coffee shop." << endl;
+            return;
         }
     }
     else

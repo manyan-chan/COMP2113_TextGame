@@ -1,7 +1,7 @@
 #ifndef chemlab
 #define chemlab
 
-#include <iostream>
+
 #include <vector>
 #include "gameengine.h"
 #include "main.h"
@@ -9,7 +9,7 @@ using namespace std;
 
 void chemistrylaboratory()
 {
-    char chemlab_choice;
+    string chemlab_choice;
     if (location_count[5] == 1)
     {
         cout << "You are trying to apply what you have learnt. You take out a 1M Sodium Chloride and 1M Hydrochloric Acid.\n"
@@ -19,12 +19,12 @@ void chemistrylaboratory()
         while (true)
         {
             cin >> chemlab_choice;
-            if (chemlab_choice == 'Y' || chemlab_choice == 'N')
+            if (chemlab_choice == "Y" || chemlab_choice == "N")
                 break;
             else
                 cout << "Please try again! Y/N?";
         }
-        if (chemlab_choice == 'Y')
+        if (chemlab_choice == "Y")
         {
             cout << "You prepare everything. You are going to pour all the acid inside the alkaline solution.\n"
                  << "All of a sudden, you hear a loud noise and are  distracted. You accidentally splash some acid on your hand.\n"
@@ -33,7 +33,7 @@ void chemistrylaboratory()
             resource_amount[1]--;
             return;
         }
-        else if (chemlab_choice == 'N')
+        else if (chemlab_choice == "N")
         {
             cout << "You are considering: what if the concentration is not exactly 1M? what if there are error in measuring the volume?"
                  << "you are struggling. In the end, you are hesitated and tell yourself: \"next time\".\n"
@@ -52,17 +52,17 @@ void chemistrylaboratory()
         while (true)
         {
             cin >> chemlab_choice;
-            if (chemlab_choice == 'A' || chemlab_choice == 'B')
+            if (chemlab_choice == "A" || chemlab_choice == "B")
                 break;
             else
                 cout << "Please try again! A/B?";
         }
-        if (chemlab_choice == 'A')
+        if (chemlab_choice == "A")
         {
             if (resource_amount[8] == 0)
             {
                 cout << "You don't have a bible, B is chosen for you automatically.\n";
-                chemlab_choice = 'B';
+                chemlab_choice = "B";
             }
             else
             {
@@ -74,7 +74,7 @@ void chemistrylaboratory()
                 return;
             }
         }
-        if (chemlab_choice == 'B')
+        if (chemlab_choice == "B")
         {
             cout << "You stand up with your hands raised up. \"Hi! This is Jacky.\" and you start your self-introduction.\n"
                  << "In the conservation, you know she is called Ashley. You are now friend with her.\n"
@@ -83,17 +83,17 @@ void chemistrylaboratory()
             while (true)
             {
                 cin >> chemlab_choice;
-                if (chemlab_choice == 'Y' || chemlab_choice == 'N')
+                if (chemlab_choice == "Y" || chemlab_choice == "N")
                     break;
                 else
                     cout << "Please try again! A/B?";
             }
-            if (chemlab_choice == 'Y')
+            if (chemlab_choice == "Y")
             {
                 if (resource_amount[7] == 0)
                 {
                     cout << "You don't have notebook & pen, N is chosen for you automatically.\n";
-                    chemlab_choice = 'N';
+                    chemlab_choice = "N";
                 }
                 else
                 {
@@ -102,7 +102,7 @@ void chemistrylaboratory()
                     return;
                 }
             }
-            if (chemlab_choice == 'N')
+            if (chemlab_choice == "N")
             {
                 cout << "\"No thanks, probably next time.\"" << endl;
                 return;

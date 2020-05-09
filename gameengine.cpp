@@ -17,7 +17,6 @@
 using namespace std;
 
 //------------------------------------------------------------------------------------------------------------//
-int frequency = 0;
 
 //cases
 // A is supermarket
@@ -47,16 +46,11 @@ void game_engine()
                  << "E. School hall\n"
                  << "F. Chemistry laboratory\n"
                  << "G. Lawn\n"
-                 << "H. Community market"
+                 << "H. Community market\n"
                  << "Input: " << endl;
-            while (true)
-            {
-                cin >> cases;
-                if (cases == 'A' || cases == 'B' || cases == 'C' || cases == 'D' || cases == 'E' || cases == 'F' || cases == 'G' || cases == 'H')
-                    break;
-                else
-                    cout << "Please try again! A-H?";
-            }
+
+            cin >> cases;
+            
             switch (cases)
             {
             case ('A'):
@@ -91,6 +85,9 @@ void game_engine()
                 communitymarket();
                 location_count[7]++;
                 break;
+            default:
+                cout << "Please try again! A-H?";
+                frequency--;
             }
         }
         frequency = 0;
